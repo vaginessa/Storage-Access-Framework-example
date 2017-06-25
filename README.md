@@ -38,7 +38,7 @@ Toast.makeText(this, getString(R.string.success), Toast.LENGTH_SHORT)
                 .putString("selectedSD", uri)
                 .apply();
     }
-    ```
+```
     
     ### 4. Using getSDCardUri method You can access this string later
    

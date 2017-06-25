@@ -42,7 +42,7 @@ Toast.makeText(this, getString(R.string.success), Toast.LENGTH_SHORT)
     
     ### 4. Using getSDCardUri method You can access this string later
    
-   ```
+```
     private String getSDCardUri(Activity activity) {
 
         SharedPreferences preferenceSD = activity.getSharedPreferences("sdUri", Context.MODE_PRIVATE);

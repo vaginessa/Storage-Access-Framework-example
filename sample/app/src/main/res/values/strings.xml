@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StorageAccessFramework</string>
+    <string name="sdcard">SD Card access</string>
+    <string name="sdcardContent">Your device is running Android 5.0+, to edit files on external SD Card please tell us the external SD Card path on the phone in the next step ᕙ༼ຈل͜ຈ༽ᕗ</string>
+    <string name="success">Successfully saved sdcard uri!</string>
+    <string name="ask">Ask SDCARD access</string>
+
+</resources>

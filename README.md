@@ -4,7 +4,7 @@ Example that shows how to have SD Card access on >= Lollipop devices. This is ne
 ![ScreenShot](https://github.com/enricocid/Storage-Access-Framework-example/blob/master/layout-2017-06-25-150239.png)
 
 
-### 1. On button click we are gonna show a rationale dialog to explain why >=Lollipop users needs to grant SD Card access (rationale dialog method). On click OK we start an intent for result to open document tree where user can pick the sdcard path
+### 1. On button click we are gonna show a rationale dialog to explain why >=Lollipop users need to grant SD Card access (rationale dialog method). On click OK we start an intent for result to open document tree where user can pick the sdcard path
 
 ```
 Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);

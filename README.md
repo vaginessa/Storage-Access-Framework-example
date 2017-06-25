@@ -9,7 +9,8 @@ Example that shows how to have SD Card access on >= Lollipop devices. This is ne
 ```
 Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
 
-activity.startActivityForResult(intent, 1);```
+activity.startActivityForResult(intent, 1);
+```
 
 ### 2. On activity result we save the picked sdcard path to preferences
 
@@ -17,12 +18,13 @@ activity.startActivityForResult(intent, 1);```
 saveSDCardUri(this, String.valueOf(data.getData()));
 
 Toast.makeText(this, getString(R.string.success), Toast.LENGTH_SHORT)
- .show();```
+ .show();
+ ```
  
  ### 3. The method to save the sd card path to preferences:
  
  ```
-  private void saveSDCardUri(Activity activity, String uri) {
+ private void saveSDCardUri(Activity activity, String uri) {
 
         SharedPreferences preferenceSD;
         preferenceSD = activity.getSharedPreferences("sdUri", Context.MODE_PRIVATE);
@@ -35,7 +37,8 @@ Toast.makeText(this, getString(R.string.success), Toast.LENGTH_SHORT)
         preferenceSD.edit()
                 .putString("selectedSD", uri)
                 .apply();
-    }```
+    }
+    ```
     
     ### 4. Using getSDCardUri method You can access this string later
    
@@ -45,4 +48,5 @@ Toast.makeText(this, getString(R.string.success), Toast.LENGTH_SHORT)
         SharedPreferences preferenceSD = activity.getSharedPreferences("sdUri", Context.MODE_PRIVATE);
 
         return preferenceSD.getString("selectedSD", "");
-    }```
+    }
+    ```
